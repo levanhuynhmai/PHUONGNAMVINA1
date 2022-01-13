@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi tiết sản phẩm</title>
+
+
+    <link rel="stylesheet" href="./src/css/plugin.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+    <section>
+        <div id="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a class="text-decoration-none" href="">Trang chủ</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a class="text-decoration-none list-breadcrumb" href="">Sản phẩm nổi bật</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a class="text-decoration-none list-breadcrumb" href="">Khoán sản ở trung du miền núi bắc bộ</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="product margin-top-20">
+
+            <div class="container">
+                <div class="row">
+                    <div class="details-product">
+
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <div class="rows">
+
+                                <div class="product-detail-left product-images col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                    <div class="row">
+                                        <div class="col_large_default large-image">
+
+                                            <div style="height:468px;width:468px;" class="zoomWrapper">
+                                                <p class="img-wrap">
+                                                    <img src="./src/img/pics/Graphite.jpg" alt="gallery" class="img-responsive center-block" style="position: absolute;">
+
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                        <div id="gallery_02" class="owl-carousel owl-theme thumbnail-product thumb_product_details not-dqowl owl-loaded owl-drag">
+
+
+                                            <div class="owl-stage-outer owl-height" style="height: 75px;overflow: unset;">
+                                                <div class="owl-stage list-img wrapper" style=" width: 605px;">
+
+                                                    <div class="owl-item active" style="width: 81.333px; margin-right: 5px;">
+                                                        <div class="item">
+                                                            <a>
+                                                                <img src="./src/img/pics/Graphite.jpg" alt="gallery">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <script>
+                                            const wrapper = document.querySelector('.wrapper')
+                                            let isMouseDown = false
+                                            let startX, scrollLeft
+
+                                            wrapper.addEventListener('mousedown', (e) => {
+                                                isMouseDown = true
+                                                startX = e.pageX - wrapper.offsetLeft
+                                                scrollLeft = wrapper.scrollLeft
+                                            })
+
+                                            wrapper.addEventListener('mouseleave', () => {
+                                                isMouseDown = false
+                                            })
+
+                                            wrapper.addEventListener('mouseup', () => {
+                                                isMouseDown = false
+                                            })
+
+                                            wrapper.addEventListener('mousemove', (e) => {
+                                                if (!isMouseDown) return
+
+                                                const x = e.pageX - wrapper.offsetLeft
+                                                    // 3 là tốc độ scroll
+                                                const walk = (x - startX) * 3
+                                                wrapper.scrollLeft = scrollLeft - walk
+                                            })
+                                        </script>
+
+                                        <script>
+                                            let listDivImg = document.querySelectorAll('.list-img div')
+                                            let next = document.querySelector('.next')
+                                            let prev = document.querySelector('.prev')
+                                            let imgWrap = document.querySelector('.img-wrap img')
+
+                                            let currentIndex = 0
+
+                                            setCurrent(currentIndex)
+
+                                            function setCurrent(index) {
+                                                currentIndex = index
+                                                imgWrap.src = listDivImg[currentIndex].querySelector('img').src
+
+                                                // remove all active img
+                                                listDivImg.forEach((item) => {
+                                                    item.classList.remove('active')
+                                                })
+
+                                                // set active
+                                                listDivImg[currentIndex].classList.add('active')
+                                            }
+
+                                            listDivImg.forEach((img, index) => {
+                                                img.addEventListener('click', (e) => {
+                                                    setCurrent(index)
+                                                })
+                                            })
+                                        </script>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 details-pro">
+                                    <h1 class="title-product">KHOÁNG SẢN RẮN Ở TRUNG DU MIỀN NÚI BẮC BỘ</h1>
+
+
+                                    <div class="aer-review-result ae-total-2">
+                                        <span class="aer-star-active"><svg height="20pt" viewBox="0 -10 511.98685 511" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+                                            </svg></span>
+
+
+                                        <span class="aer-star-active"><svg height="20pt" viewBox="0 -10 511.98685 511" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+                                            </svg></span>
+
+
+                                        <span class="aer-star-active"><svg height="20pt" viewBox="0 -10 511.98685 511" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+                                            </svg></span>
+
+
+                                        <span class="aer-star-active"><svg height="20pt" viewBox="0 -10 511.98685 511" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+                                            </svg></span>
+
+
+                                        <span class="aer-star-active"><svg height="20pt" viewBox="0 -10 511.98685 511" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+                                            </svg></span>
+
+                                    </div>
+
+                                    <div>
+
+                                        <div class="group-status">
+                                            <span class="first_status">Thương hiệu: <span class="status_name">Loại đá</span></span>
+                                            <span class="first_status"> &nbsp;|&nbsp; Tình trạng:
+                                                                                        <span class="status_name availabel">Còn hàng</span>
+
+                                            </span>
+                                        </div>
+                                        <div class="price-box clearfix">
+                                            <span class="special-price">
+                                                <span class="price product-price"> Vui lòng liên hệ</span>
+
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-summary product_description margin-bottom-0">
+                                        <div class="rte description  rte-summary">
+                                            <p></p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p style="margin-bottom: 0px; position: relative; padding-left: 20px;">- Thông tin về sản phẩm</p>
+                                            <p></p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="form-product col-sm-12">
+                                        <form id="add-to-cart-form" action="" method="POST" class="form-inline margin-bottom-0">
+                                            <input type="hidden" name="_token" value="bRcuT17NN1YMCNhbsFyNpxR5cZA5qdq3aZ8tw5ip"> <input type="hidden" name="product_id" value="5">
+
+                                            <div class="form-group form_button_details margin-top-5">
+                                                <div class="form_product_content">
+
+                                                    <div class="soluong show">
+                                                        <div class="label_sl margin-bottom-10">Số lượng:</div>
+                                                        <div class="custom input_number_product custom-btn-number form-control">
+                                                            <button class="btn_num num_1 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) && qtypro > 1 ) result.value--;return false;" type="button">-</button>
+                                                            <input type="text" id="qtym" name="quantity" value="1" onkeyup="valid(this,'numbers')" onkeypress="validate(event)" class="form-control prd_quantity">
+                                                            <button class="btn_num num_2 button button_qty" onclick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;" type="button">+</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="button_actions clearfix">
+                                                        <button type="submit" class="btn btn_base btn_add_cart btn-cart">
+                                                            <span class="text_1">MUA NGAY</span>
+                                                            <span class="text_2">Giao hàng miễn phí tận nơi</span>
+                                                        </button>
+
+                                                        <a class="btn btn_base btn_call" href="tel:(028)73013878">
+                                                            <span class="text_1">GỌI ĐẶT HÀNG</span>
+
+                                                            <span class="text_2">Vui lòng gọi ngay (028) 7301 3878</span>
+
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="tab_h">
+
+                                <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 no-padding">
+                                    <!-- Nav tabs -->
+                                    <div class="product-tab e-tabs">
+                                        <ul class="tabs tabs-title clearfix">
+
+                                            <li class="tab-link current" data-tab="tab-1">
+                                                <h3><span>Mô tả sản phẩm</span></h3>
+                                            </li>
+
+                                        </ul>
+
+
+                                        <div id="tab-1" class="tab-content current">
+                                            <div class="rte">
+
+
+
+                                                <div class="product-well">
+                                                    <div class="ba-text-fpt">
+
+                                                        <table border="0" style="border-spacing: 0px; width: 793px; margin-bottom: 1em; table-layout: fixed; color: rgb(136, 136, 136); font-family: arial; height: 32px;">
+                                                            <tbody style="font-size: 12px;">
+                                                                <tr>
+                                                                    <td style="padding: 15px; text-align: center; border: 1px solid rgb(225, 225, 225); color: rgb(28, 28, 28);">
+                                                                        <span style="font-size: large; color: rgb(128, 0, 0);">
+                                                                            <span style="font-weight: 700; font-size: 18px;">Thông số</span>
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <table border="1" cellpadding="1" class="specTable" style="border-spacing: 0px; width: 793px; margin-bottom: 1em; table-layout: fixed; color: rgb(136, 136, 136); font-family: arial; font-size: 12px; height: 1261.33px;">
+                                                            <tbody>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <style>
+                                            .rte table {
+                                                width: inherit !important;
+                                            }
+                                        </style>
+
+                                        <script>
+                                            /*JS XEM THÊM PRODUCT*/
+                                            $(document).ready(function(e) {
+                                                $('.btn--view-more').on('click', function(e) {
+                                                    e.preventDefault();
+                                                    var $this = $(this);
+                                                    $this.parents('#tab-1').find('.product-well').toggleClass(
+                                                        'expanded');
+                                                    $(this).toggleClass('active');
+                                                    return false;
+                                                });
+                                            });
+                                        </script>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-xs hidden-sm hidden-md">
+                            <div class="right_module margin-bottom-50">
+                                <div class="module_service_details">
+
+                                    <div class="wrap_module_service">
+
+                                        <div class="item_service">
+                                            <div class="wrap_item_">
+                                                <div class="content_service">
+                                                    <p>Giao hàng miễn phí toàn quốc</p>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="item_service">
+                                            <div class="wrap_item_">
+                                                <div class="content_service">
+                                                    <p>TP. HCM</p>
+                                                    <span>Nhận hàng từ 24 đến 72h sau khi đặt hàng</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="item_service">
+                                            <div class="wrap_item_">
+                                                <div class="content_service">
+                                                    <p>HÀ NỘI</p>
+                                                    <span>Nhận hàng từ 24 đến 48h sau khi đặt hàng</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="item_service">
+                                            <div class="wrap_item_">
+                                                <div class="content_service">
+                                                    <p>CÁC TỈNH THÀNH KHÁC</p>
+                                                    <span>nhận hàng từ 24 đến 96h sau khi đặt hàng</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 related-product margin-top-20 xs-margin-top-0 margin-bottom-30">
+                    <div class="section_prd_feature section_base">
+                        <div class="border_bottom_title clearfix">
+                        </div>
+                        <div class="title_top_menu">
+                            <h3 class="title-head">
+                                <a href="https://mcomputer.site/collections/laptop-acer" style="
+                                font-size: 23px;">Sản phẩm cùng loại</a>
+                            </h3>
+                        </div>
+                        <hr/>
+                        <div class="products product_related products-view-grid-bb owl-carousel owl-theme products-view-grid not-dot2 owl-loaded owl-drag ">
+
+                            <div class=" owl-stage-outer ">
+                                <div class="owl-stage ">
+
+                                    <div class="item-3 col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
+                                        <a href=" ">
+                                            <img src="./src/img/pics/1573006985.png " class="item-pd ">
+                                        </a>
+
+                                        <img src="./src/img/pics/images.jfif " class="img-item " alt="Owl Image ">
+                                        <h3 class="item_name ">
+                                            <a href=" ">APATIT</a>
+                                        </h3>
+                                    </div>
+
+                                    <div class="item-3 col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
+                                        <a href=" ">
+                                            <img src="./src/img/pics/1573006985.png " class="item-pd ">
+                                        </a>
+
+                                        <img src="./src/img/pics/images.jfif " class="img-item " alt="Owl Image ">
+                                        <h3 class="item_name ">
+                                            <a href=" ">APATIT</a>
+                                        </h3>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </section>
+
+    <div w3-include-html="footer.html "></div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="./src/js/include.js "></script>
+</body>

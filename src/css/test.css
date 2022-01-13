@@ -1,0 +1,33 @@
+.quote {
+    position: absolute;
+    padding: 0 10px 0 10px;
+    height: 39px;
+    line-height: 39px;
+    font-weight: 500;
+    color: #404041;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: left;
+    font-family: revert;
+    font-weight: 400;
+    z-index: 2;
+    background: #f8ff0b;
+}
+
+.quote:before {
+    content: "";
+    position: absolute;
+    left: 130px;
+    border-top: 36px solid #f8ff0b;
+    border-right: 23px solid transparent;
+    border-left: 23px solid transparent;
+}
+
+.quote::after {
+    content: "";
+    position: absolute;
+    left: 130px;
+    border-top: 36px solid #f8ff0b;
+    border-right: 23px solid transparent;
+    border-left: 23px solid transparent;
+}

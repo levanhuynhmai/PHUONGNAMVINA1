@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liên Hệ</title>
+
+
+    <link rel="stylesheet" href="./src/css/plugin.css">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+    <section>
+        <div id="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a class="text-decoration-none" href="">Trang chủ</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a class="text-decoration-none" href="">Liên hệ</a>
+                                </li>
+
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container contact margin-bottom-20">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="widget-item info-contact in-fo-page-content">
+                        <h1 class="title-head">Thông tin liên hệ</h1>
+                        <!-- End .widget-title -->
+                        <ul class="widget-menu contact-info-page">
+
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: 190 Bạch Đằng, Phường 24, Quận Bình Thạnh, TPHCM</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0912817117">Hotline :0912817117, 0915101017</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@phuongnamvina.vn">Email: info@phuongnamvina.vn</a></li>
+                            <li><i class="fas fa-globe-americas"></i><a href="https://phuongnamvina.com/">Website: phuongnamvina.com & websitechuyennghiep.vn</a></li>
+
+                        </ul>
+                        <!-- End .widget-menu -->
+                    </div>
+                    <div class="box-maps margin-top-10 margin-bottom-10">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.104321195255!2d106.70401801475892!3d10.803321561650904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528bbd986da8b%3A0x5f49967ed668ee9d!2zMTkwIMSQLiBC4bqhY2ggxJDhurFuZywgUGjGsOG7nW5nIDI0LCBCw6xuaCBUaOG6oW5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1641958601575!5m2!1svi!2s"
+                            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="page-login">
+                        <div id="login">
+                            <h3 class="title-head text-center">Gửi thông tin</h3>
+                            <span class="text-center block"></span>
+                            <span class="text-center margin-bottom-10 block">Bạn hãy điền nội dung tin nhắn vào form
+                                dưới đây và
+                                gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn sau khi nhận được.
+                            </span>
+
+                            <form id="form-contact" method="post" class="row dang-ky-tu-van" novalidate="novalidate">
+                                <div class="col-sm-12">
+                                    <div class="form-group" style="margin-bottom: 10px;">
+                                        <input type="text" id="ho_ten" name="ho_ten" class="form-control" placeholder="Họ tên (*)">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 10px;">
+                                        <input type="number" id="so_dien_thoai" name="so_dien_thoai" class="form-control" placeholder="Số điện thoại (*)">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 10px;">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="textarea-message form-group" style="margin-bottom: 10px;">
+                                        <textarea style="height: 60px;" class="form-control" name="noi_dung" placeholder="Nội dung liên hệ (*)" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group item-captcha" style="margin-top: 13px;">
+                                        <div class="row">
+                                            <div class="col-sm-8 plr10">
+                                                <div class="g-recaptcha" data-sitekey="6LdBzKUZAAAAAH615MmsGWgKAiicxrUweFbAe6OE">
+                                                    <div style="width: 304px; height: 78px;">
+                                                        <div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdBzKUZAAAAAH615MmsGWgKAiicxrUweFbAe6OE&amp;co=aHR0cHM6Ly9waHVvbmduYW12aW5hLmNvbTo0NDM.&amp;hl=vi&amp;v=-FJgYf1d3dZ_QPcZP7bd85hc&amp;size=normal&amp;cb=f8m5r99oxmuv"
+                                                                width="304" height="78" role="presentation" name="a-saz0v5lntsle" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div>
+                                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                    </div>
+                                                </div>
+                                                <!--input type="text" class="form-control" id="captcha" placeholder="Nhập mã bảo mật" name="captcha" style="background: url(./sources/capchaimage.php) center right no-repeat"-->
+                                            </div>
+                                            <div class="col-sm-4 plr10">
+                                                <button class="form-control btn btn-success btn-dk" style="height: 47px;
+                                                                                                        width: 119px;
+                                                                                                        float: right;" name="sub_email" type="submit">Gửi liên hệ 
+                                                <i class="fa fa-paper-plane"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div w3-include-html="footer.html"></div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./src/js/include.js"></script>
+</body>
+
+</html>
