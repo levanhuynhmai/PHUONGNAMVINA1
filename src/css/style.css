@@ -1292,7 +1292,7 @@ margin-top: 50px; */
     user-select: none;
     cursor: pointer;
     padding: 20px;
-    overflow-x: auto;
+    overflow-x:auto;
 }
 .item {
     display: inline-flex;
